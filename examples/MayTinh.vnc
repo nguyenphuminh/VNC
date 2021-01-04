@@ -1,0 +1,31 @@
+DoiTieuDe May tinh
+DoiMau 8f
+DoiKichCo con cols=60 lines=20
+
+Moc menu
+An
+
+InRaDong =========================================================
+InRaDong                         May T^inh 
+InRaDong
+InRaDong                         "+" Cong
+InRaDong
+InRaDong                         "-" Tru
+InRaDong
+InRaDong                         "*" Nhan
+InRaDong
+InRaDong                         "/" Chia
+InRaDong
+InRaDong
+InRaDong N^hap bieu thuc toan hoc:
+
+Nhap prob= 
+Tinh ans=%prob% 2>nul
+
+InRaDong Dap an: %ans%
+InRaDong
+InRaDong A^n bat ki phim nao de tiep tuc...
+
+TamDung >nul
+
+DiToi menu
