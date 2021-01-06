@@ -38,17 +38,17 @@ Cuối cùng là tạo một thư mục project VNC mới:
 
 <b>Trình biên dịch này chỉ hoạt động trên Windows.</b>
 
-## Samples
+## Các chương trình ví dụ
 <a href=https://github.com/nguyenphuminh/VNC/tree/master/Examples>Ấn vào đây để xem các ví dụ.</a>
 
-## Convert VNC to .EXE files
+## Chuyển .vnc sang .exe
 Trong "vnc/utils/scripts", có file "battoexe.bat" với công dụng là chuyển đổi file .bat sang .exe.
 
 Để chuyển từ .vnc sang .exe, bạn sẽ phải dịch code .vnc sang .bat bằng trình biên dịch, rồi kéo file .bat mới vào battoexe.bat để chuyển sang .exe.
 
 Bạn có thể tìm trên mạng một số tool khác trên mạng để chuyển .bat sang .exe.
 
-## Sublime Text
+## Sublime text
 Để làm nổi bật code (thêm màu), copy folder "VNC" trong cùng thư mục trên, rồi paste vào "%APPDATA%\Sublime Text v\Packages\".
 
 VNC được hỗ trợ lớn trong Sublime Text, nên bạn rất nên sử dụng Sublime Text để code VNC.
@@ -58,7 +58,7 @@ Có khá nhiều framework trong folder "utils" mà bạn có thể sử dụng 
 
 <b>Lưu ý: Tôi không sở hữu chúng.</b>
 
-## Copyrights and License
+## Điều khoản & Bản quyền
 Copyright © 2020 Nguyen Phu Minh
 
 This language is licensed under the MIT License
