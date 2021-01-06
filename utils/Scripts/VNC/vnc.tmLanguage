@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>fileTypes</key>
+  <array>
+    <string>vnc</string>
+  </array>
+  <key>name</key>
+  <string>VNC</string>
+  <key>patterns</key>
+  <array>
+    <dict>
+      <key>match</key>
+      <string>InRaDong|InRa|NeuPhim|NeuPhimKhongLa|NeuKhongPhai|NeuDaKhoiTao|NeuTonTai|NeuKhongTonTai|NeuChuaKhoiTao|Neu|KhongThi|EQU|LEQ|LSS|GEQ|GTR|NEQ|KiemTraChanLe|KiemTra|KiemTraVaInKetQua|MuHai|LapKhi|NgungLap|LapLienTuc|ChoToiKhi|MuBa|ThucHien|ThucHienVaInKetQua|\:|\=\=|\+\+|\-\-|</string>
+      <key>name</key>
+      <string>keyword.control</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>Tinh|Dat|Nhap|Moc|DiToi|GoiHam|GoiThuTuc</string>
+      <key>name</key>
+      <string>support.constant</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>HienCuaSoLenh|AnCuaSoLenh</string>
+      <key>name</key>
+      <string>variable.parameter</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>GoPhim|An|DoiKichCo|DoiMau|Chen|DoiTieuDe|TamDung|ThongTinIP|ThongTinMay|GuiKetNoi|QuetThuMuc|QuetFile|QuetChuoi|QuetNoiDung|VongLap|Cho|XemMucVaTep|DoiNgay|DoiGio|XemNgay|XemGio|KhoiDongLai|TatMay|LapChuongTrinhf|Thoat|MoTapTin|SaoChepTapTin|DiChuyenTapTin|DoiTenTapTin|DocTapTin|XoaTapTin|XoaThuMuc|ChuyenVaoThuMuc|TaoThuMuc|TruyCapO|</string>
+      <key>name</key>
+      <string>entity.name.function</string>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>\s[0-9]+|\%|</string>
+      <key>name</key>
+      <string>constant.numeric</string>
+    </dict>
+  </array>
+  <key>scopeName</key>
+  <string>source.vnc</string>
+  <key>uuid</key>
+  <string>6f5f460e-5ab0-4ce2-8cb7-0cafea6c46c9</string>
+</dict>
+</plist>
