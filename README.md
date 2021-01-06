@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo.png" />
+  <img src="assets/VNC.png" />
   <br/>
   <b>A programming language for Vietnameses</b>
   <br/>

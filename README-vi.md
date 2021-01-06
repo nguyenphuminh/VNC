@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo.png" />
+  <img src="assets/VNC.png" />
   <br/>
   <b>Ngôn ngữ lập trình dành cho người Việt</b>
   <br/>
