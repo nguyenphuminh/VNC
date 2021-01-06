@@ -8,7 +8,7 @@
   <a href="https://github.com/nguyenphuminh/VNC/search?l=batchfile"><img alt="language" src="https://img.shields.io/badge/language-Batchfile-purple.svg"></a>
 </div>
 
-## What is VNC ?
+## VNC là gì ?
 VNC là ngôn ngữ lập trình được tạo ra dành cho người Việt với cấu trúc câu lệnh là những cụm từ tiếng Việt. VNC được tạo ra dựa trên mã nguồn của một ngôn ngữ khác (cũng là do tôi tạo) tên là <a href="https://github.com/nguyenphuminh/FreakC">"FreakC"</a>
 
 ## Hướng dẫn sử dụng trình biên dịch
