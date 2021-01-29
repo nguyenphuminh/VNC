@@ -40,11 +40,11 @@ set wloopnum=0
 set wloopnum2=0
 echo @echo off>%a%.bat
 echo :FreakCCompiled>>%a%.bat
-echo set /a numpuke=%%random%% %%%% 99 + 1 >>%a%.bat
-echo set /a numpoop=%%random%% %%%% 999 + 1 >>%a%.bat
-echo set /a numpiss=%%random%% %%%% 9 + 1 >>%a%.bat
-echo set /a numdiarrhea=%%random%% %%%% 9999 + 1 >>%a%.bat
-echo set /a numbutt=%%random%% %%%% 99999 + 1 >>%a%.bat
+echo set /a sobatki1=%%random%% %%%% 9 + 1 >>%a%.bat
+echo set /a sobatki2=%%random%% %%%% 99 + 1 >>%a%.bat
+echo set /a sobatki3=%%random%% %%%% 999 + 1 >>%a%.bat
+echo set /a sobatki4=%%random%% %%%% 9999 + 1 >>%a%.bat
+echo set /a sobatki5=%%random%% %%%% 99999 + 1 >>%a%.bat
 for /f "tokens=* delims= " %%x in (%a%.vnc) do (
 	set deniedToken=false
 	set printString=%%x
@@ -192,6 +192,7 @@ for /f "tokens=* delims= " %%x in (%a%.vnc) do (
 		if %%a == GuiKetNoi set printString=!printString:GuiKetNoi=ping!
 		if %%a == ThongTinMay set printString=!printString:ThongTinMay=systeminfo!
 		if %%a == ThongTinIP set printString=!printString:ThongTinIP=ipconfig /all!
+		if %%a == ChapNhanUnicode set printString=!printString:ChapNhanUnicode=chcp 65001!
 	)
 	if "!fccomment!" == "false" (
 		if not "!deniedToken!" == "true" echo. !printString!>>%a%.bat

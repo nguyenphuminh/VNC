@@ -40,6 +40,9 @@ To create a new VNC project quickly, you can type:
 
 <b>The compiler only works on Windows, and can only be compiled to Batch.</b>
 
+## Tutorials
+<li><a href="TUTORIAL.md">English</a></li>
+
 ## Samples
 <a href=https://github.com/nguyenphuminh/VNC/tree/master/Examples>Click here to see samples</a>
 

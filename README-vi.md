@@ -38,6 +38,9 @@ Cuối cùng là tạo một thư mục project VNC mới:
 
 <b>Trình biên dịch này chỉ hoạt động trên Windows.</b>
 
+## Hướng dẫn sử dụng ngôn ngữ
+<li><a href="TUTORIAL.md">Tiếng Anh</a></li>
+
 ## Các chương trình ví dụ
 <a href=https://github.com/nguyenphuminh/VNC/tree/master/Examples>Ấn vào đây để xem các ví dụ.</a>
 
