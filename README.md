@@ -9,7 +9,7 @@
 </div>
 
 ## What is VNC ?
-VNC is a scripting/programming language created for Vietnamese with syntax which specifies Vietnamese. This language was built based on the source code of another language which I also made called <a href="https://github.com/nguyenphuminh/FreakC">"FreakC"</a>
+VNC is a scripting/programming language created for Vietnamese with syntax which specifies Vietnamese. This language was built based on the source code of another language which I also made called <a href="https://github.com/FreakC-Foundation/FreakC">"FreakC"</a>
 
 <a href="README-vi.md">Chuyển sang tiếng Việt...</a>
 
