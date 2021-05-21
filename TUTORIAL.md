@@ -1,17 +1,12 @@
 <div align="center">
-  <img src="Resources/Branding/logo.png" />
+  <img src="assets/VNC.png" />
   <br/>
-  <b>A programming language for drunk coders</b>
+  <b>A programming language for Vietnamese</b>
   <br/>
   <br/>
   <a href="https://github.com/nguyenphuminh/VNC/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg"/></a>
   <a href="https://github.com/nguyenphuminh/VNC/search?l=batchfile"><img alt="language" src="https://img.shields.io/badge/language-Batchfile-purple.svg"></a>
-  <a href="#"><img src="https://img.shields.io/github/downloads/nguyenphuminh/VNC/total.svg"/></a>
-  <a href="https://github.com/nguyenphuminh/VNC/blob/master/.github/CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
 </div>
-
-# Disclaimer
-This tutorial is not for beginners at programming because it is very difficult to understand.
 
 # Print text with InRa[]
 To print out a string or text, you use:
