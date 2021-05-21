@@ -1,7 +1,7 @@
 <div align="center">
   <img src="assets/VNC.png" />
   <br/>
-  <b>A programming language for Vietnameses</b>
+  <b>A programming language for Vietnamese</b>
   <br/>
   <br/>
   <a href="https://github.com/nguyenphuminh/VNC/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg"/></a>
@@ -37,6 +37,19 @@ To show the current version of the devkit, type:
 To create a new VNC project quickly, you can type:
 
     vnc project_name --tao
+
+### Interactive shell
+To open interactive shell, type:
+
+    vshell
+    
+You can type in whatever you want, it will be stored in "tar.vnc". You can type in any of these commands to execute tasks:
+
+* `BatDau[c]` - Runs all the codes written
+* `Ngung[c]` - Delete tar.vnc and exit
+* `Xoa[c]` - Resets codes
+* `An[c]` - Clear console
+<br/>
 
 <b>The compiler only works on Windows, and can only be compiled to Batch.</b>
 
