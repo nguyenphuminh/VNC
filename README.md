@@ -54,7 +54,7 @@ You can type in whatever you want, it will be stored in "tar.vnc". You can type 
 <b>The compiler only works on Windows, and can only be compiled to Batch.</b>
 
 ## Tutorials
-<li><a href="TUTORIAL.md">English</a></li>
+* <a href="TUTORIAL.md">English</a>
 
 ## Samples
 <a href=https://github.com/nguyenphuminh/VNC/tree/master/Examples>Click here to see samples</a>
