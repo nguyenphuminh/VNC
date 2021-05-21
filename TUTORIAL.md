@@ -81,7 +81,12 @@ To declare a variable as a string, you use:
 To declare a variable as an integer or evaluate math equation, you use:
 
 	Tinh[] variable_name=integer_value
-	
+
+To evaluate an equation with a decimal result, use:
+
+	SuDungThuVien[] ThuVienThapPhan
+	ThapPhan[] "variable_name" "equation"
+
 To declare a variable as an array, you use:
 
 	data_type arr[array_index]=
@@ -315,7 +320,19 @@ This code would still work eventhough it contains special character
 
 	DiToi[] dsasd$ 123213 323
 	DiToi[] dsasd$ 123213 323
+
+
+# Macro
+You can create a macro like this:
+
+	:: A macro which prints out "Hello"
+	Dat[] hello= InRa[] Hello
+	%hello%
 	
+You can join commands together like this:
+
+	Dat[] hello= InRa[] Hello ^& InRa[] Hell yeah!
+
 # Procedural programming
 
 	TaoHam[] Procedure_name
@@ -336,8 +353,8 @@ You can implement OOP like this:
 	:: Create a procedure called "Dog"
 	TaoHam[] Dog
 		::Set properties
-		PoopString[fnc] %~1.age=%~2
-		PoopString[fnc] %~1.weight=%~3
+		PoopString[] %~1.age=%~2
+		PoopString[] %~1.weight=%~3
 		(
 			InRa[] InRa[] *Being cute*
 		)>%~1.BeingCute.bat
@@ -557,8 +574,72 @@ For example, this program will print all the number from 0 to 10 then print out 
 # Use Batch in VNC
 Unlike all the previous release, now VNC support writing Batch without any other commands. So you can actually learn Batch and write Batch codes in VNC.
 
-### Is adding Batch to VNC will kill the usages of VNC ?
-Well, I would say it will and won't at the same time. What I mean is that if there is Batch in VNC, you would definitely write Batch rather than VNC, but actually, VNC codes are just compiled to Batch anyway. The only key feature of VNC is being an esolang with funny and dirty syntax, that's why people would want to use it. VNC doesn't improve Batch, it's just a funny version of it.
+# Import pre-built libraries
+To import a pre-built library, use:
+
+	SuDungThuVien[] lib_name
+	
+## Using "ThuVienMang"
+
+	SuDungThuVien[] arrayfunc
+	
+	:: Find sum of list
+	TongSoHangCuaDay[] "variable_name" "list"
+	
+	:: Find maximum of list
+	SoLonNhatCuaDay[] "variable_name" "list"
+	
+	:: Find minimum of list
+	SoNhoNhatCuaDay[] "variable_name" "list"
+	
+	:: Example:
+	SoLonNhatCuaDay[] "max_num" "2 3 1 8 5"
+	:: This will prints out "8"
+	InRa[] %max_num%
+	
+### Note
+All the functions above only works with list with all integers. String or floats will cause errors.
+	
+## Using "ThuVienToanHoc"
+
+	SuDungThuVien[] math
+
+	:: Absolute
+	GiaTriTuyetDoi[] "variable_name" "number"
+	
+	:: Check if a number is odd
+	KiemTraLe[] "variable_name" "number"
+
+	:: Check if a number is even
+	KiemTraChan[] "variable_name" "number
+
+	:: Power
+	Mu[] "variable_name" "number" "power_num"
+	
+	:: Factorial
+	GiaiThua[] "variable_name" "number"
+	
+## Using "ThuVienChuoi"
+
+	SuDungThuVien[] ThuVienChuoi
+	
+	:: Length of string
+	DoDaiChuoi[] "variable_name" "string"
+	
+	:: To uppercase
+	InHoa[] "variable_name" "number"
+	
+	:: To lowercase
+	InThuong[] "variable_name" "number"
+	
+	:: Reverse
+	DaoChuoi[] "variable_name" "string"
+	
+## Loading lib entirely with GoiThuTuc[]
+Example:
+
+	:: Check if a number is odd
+	GoiThuTuc[] fclib_math_odd.bat "variable_name" "number"
 
 # Nul in VNC
 It's just like nul in Batch, so if you want to make your console not print out any process, you can do it like this:

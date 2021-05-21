@@ -47,11 +47,11 @@ for /f "tokens=* delims= " %%x in (%a%.vnc) do (
 	for %%a in (%%x) do (
 		if %%a == SuDungThuVien[] (
 			set lib=!printString:SuDungThuVien[] =!
-			if "!lib!" == "float" (
+			if "!lib!" == "ThuVienThapPhan" (
 				echo for /f %%%%i in ('powershell %%~2'^) DO set %%~1=%%%%i>fclib_float.bat
 				set deniedToken=true
 				set floatimp=true
-			) else if "!lib!" == "arrayfunc" (
+			) else if "!lib!" == "ThuVienMang" (
 				(
 				echo set max=1
 				echo for %%%%i in ^(%%~2^) DO (
@@ -86,7 +86,7 @@ for /f "tokens=* delims= " %%x in (%a%.vnc) do (
 				echo set %%~1=%%sum%%
 				)>fclib_arrayfunc_sum.bat
 				set deniedToken=true
-			) else if "!lib!" == "math" (
+			) else if "!lib!" == "ThuVienToanHoc" (
 				(
 				echo set tar=%%~2
 				echo set %%~1=%%tar:-=%%
@@ -116,29 +116,35 @@ for /f "tokens=* delims= " %%x in (%a%.vnc) do (
 				echo set %%~1=%%res%%
 				)>fclib_math_pow.bat
 				(
-				echo set /a num1=0
-				echo set /a num2=1
-				echo set /a num3=0
+				echo set num1=0
+				echo set num2=1
+				echo set num3=0
 				echo set str=1
+				echo set i=0
+ 				echo set /a end=%%~2 - 1
 				echo :loop
-				echo if not %%num3%% LSS %%~2 goto end
+				echo if not %%i%% LSS %%end%% goto end
  				echo set /a num3=%%num1%% + %%num2%%
  				echo set str=%%str%% %%num3%%
  				echo set /a num1=%%num2%%
  				echo set /a num2=%%num3%%
+ 				echo set /a i+=1
 				echo goto loop
 				echo :end
 				echo set %%~1=%%str%%
 				)>fclib_math_fibseq.bat
 				(
-				echo set /a num1=0
-				echo set /a num2=1
-				echo set /a num3=0
+				echo set num1=0
+				echo set num2=1
+				echo set num3=0
+				echo set i=0
+ 				echo set /a end=%%~2 - 1
 				echo :loop
-				echo if not %%num3%% LSS %%~2 goto end
+				echo if not %%i%% LSS %%end%% goto end
  				echo set /a num3=%%num1%% + %%num2%%
  				echo set /a num1=%%num2%%
  				echo set /a num2=%%num3%%
+ 				echo set /a i+=1
 				echo goto loop
 				echo :end
 				echo set %%~1=%%num3%%
@@ -149,7 +155,7 @@ for /f "tokens=* delims= " %%x in (%a%.vnc) do (
 				echo for /l %%%%i in (1,1,%%~2^) do set /a mul*=%%%%i
 				echo set %%~1=%%mul%%
 				)>fclib_math_fact.bat
-			) else if "!lib!" == "string" (
+			) else if "!lib!" == "ThuVienChuoi" (
 				(
 				echo set lower=%%~2
 				echo set lower=%%lower:A=a%%
@@ -384,6 +390,7 @@ for /f "tokens=* delims= " %%x in (%a%.vnc) do (
 			set printString=!printString:++=+=1!
 			set printString=!printString:--=-=1!
 		)
+		if %%a == ThapPhan[] set printString=!printString:ThapPhan[]=call fclib_float.bat!
 		if %%a == Dat[] set printString=!printString:Dat[]=set!
 		if %%a == Nhap[] set printString=!printString:Nhap[]=set /p!
 		if %%a == DiToi[] set printString=!printString:DiToi[]=goto!
