@@ -76,6 +76,9 @@ There are many frameworks in the utils folder that you can use, I will definitel
 
 <b>Note: I don't own those frameworks.</b>
 
+## Support me!
+If you like the project, consider leaving a star on VNC and my main project - [FreakC](https://github.com/FreakC-Foundation/FreakC)
+
 ## Copyrights and License
 Copyright © 2020 Nguyen Phu Minh
 
